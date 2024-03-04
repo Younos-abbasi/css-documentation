@@ -7,7 +7,7 @@
     <title>CSS Documentation</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <div class="wrapper">
         <img class="logo" src="./images/css-3.png" alt="css logo" />
         <h1>CSS DOCS</h1>
@@ -24,7 +24,9 @@
         </ul>
       </nav>
     </header>
+    <!-- main -->
     <main id="main-doc">
+      <!-- section 1 -->
       <section class="main-section">
         <div class="card">
           <h3>CSS ruleset</h3>
@@ -55,9 +57,12 @@
           </ul>
         </div>
       </section>
+      <!-- section 2 -->
       <section class="main-section">
         <div class="card">
-          <h3>Content Area</h3>
+          <header class="header">
+            <h3>Content Area</h3>
+          </header>
           <ul>
             <li>
               Contains the actual data, such as text, images, or other media.
@@ -67,7 +72,9 @@
           </ul>
         </div>
         <div class="card">
-          <h3>Padding Area</h3>
+          <header class="header">
+            <h3>Padding Area</h3>
+          </header>
           <ul>
             <li>Surrounds the content area.</li>
             <li>Space within the border box.</li>
@@ -85,7 +92,37 @@
           </ul>
         </div>
       </section>
-      <section class="main-section">Media Queries</section>
+      <!-- section 3 -->
+      <section class="main-section">
+        <div class="card">
+          <h3>Media Query ruleset</h3>
+          <p>
+            @media only screen and (/*condition goes here */) <br />
+            { body { <br />
+            /* Conditions goes here */ <br />
+            } }
+          </p>
+        </div>
+        <div class="card">
+          <h3>Explanation</h3>
+          <p>
+            The above is the general way to call media queries. In the
+            parenthesis, we add the conditions for the browser windows such as
+            what is the minimum/maximum size you want the browser window to be
+            for the conditions in the “body” to appear
+          </p>
+        </div>
+        <div class="card">
+          <h3>Example</h3>
+          <p>
+            @media only screen and (max-width: 500px) { <br />
+            body { <br />
+            background-color: black; <br />
+            } <br />
+            }
+          </p>
+        </div>
+      </section>
       <section class="main-section">Pseudo Elements</section>
       <section class="main-section">Selectors</section>
       <section class="main-section">Transform</section>
