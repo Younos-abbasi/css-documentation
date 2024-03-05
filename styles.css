@@ -55,7 +55,7 @@ nav > ul {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
 }
 .main-section:first-of-type {
@@ -65,8 +65,8 @@ nav > ul {
 
 .card {
   border: 2px solid #14213d;
-  width: 350px;
-  max-width: 400px;
+  width: 250px;
+  max-width: 350px;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -74,5 +74,6 @@ nav > ul {
   align-items: center;
 }
 .card img {
-  width: max(300px, 7vw);
+  width: max(250px, 1.5vw);
+  object-fit: cover;
 }
